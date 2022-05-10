@@ -13,8 +13,10 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react", "@typescript-eslint"],
+  ignorePatterns: ["*.d.ts"],
   rules: {
     "comma-dangle": "off",
+    "react/self-closing-comp": "off",
     "react/react-in-jsx-scope": "off",
     "require-jsdoc": "off",
     "react/jsx-filename-extension": [
@@ -42,4 +44,4 @@ module.exports = {
       },
     },
   },
-};
+}
